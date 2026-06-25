@@ -1,0 +1,17 @@
+The Shortcut: Right-Click the Button
+Instead of left-clicking the gradebook button normally (which triggers the broken popup command):
+
+Open the portal in SEB.
+
+Right-click the button or link you use to access the gradebook.
+
+If a small menu pops up, see if it gives you an option like "Open link" or "Open link in this window". If it does, click that. This might bypass the popup restriction entirely.
+
+The Real Solution: You need a fresh SEB config file from GIKI
+If right-clicking does not work, you cannot fix this on your machine. The university's exam portal code and their distributed SEB profile are clashing.
+
+You need to contact your course instructor or campus IT support. Send them your first screenshot 5280f06a-697f-485b-9566-3886434d7e0d and tell them:
+
+"The student portal tries to open the gradebook in a new window, which SEB strictly blocks with a pink warning bar. Even though the URL is allowed in my configuration network filters, SEB won't permit the portal to launch popups. Could you please provide an updated .seb configuration file that allows popup windows for the portal?"
+
+They will have to tweak the master file on their end or provide you with a direct link to the gradebook that doesn't rely on a popup window.
