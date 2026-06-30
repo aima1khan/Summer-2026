@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Ahmad",
+        "age": 21,
+        "roll_no": 102,
+        "field_of_study": "AI",
+        "subjects": [],
+        "grades": {}
+    },
+    {
+        "name": "Ali",
+        "age": 20,
+        "roll_no": 103,
+        "field_of_study": "Mech Eng",
+        "subjects": [
+            "MT",
+            "PH"
+        ],
+        "grades": {
+            "MT": "A"
+        }
+    }
+]
