@@ -1,34 +1,7 @@
-import json
+
 from student import Student
-def save_students(students):
-    data = []
 
-    for student in students:
-        data.append(student.to_dict())
-
-    with open("students.json", "w") as file:
-        json.dump(data, file, indent=4)
-
-def load_students():
-    students = []
-    try:
-        with open("students.json", "r") as file:
-            data = json.load(file)
-            for item in data:
-                student = Student(
-                    item["name"],
-                    item["age"],
-                    item["roll_no"],
-                    item["field_of_study"]
-                )
-                student.subjects = item["subjects"]
-                student.grades = item["grades"]
-                students.append(student)
-    except FileNotFoundError:
-        pass
-    return students
-
-students = load_students()
+students = []
 choice=0
 while choice!=7:
     print("=====Student Management System=====")
@@ -41,7 +14,6 @@ while choice!=7:
         field_of_study=input("Enter Field Of Study :")
         student=Student(name,age,roll_no,field_of_study)
         students.append(student)
-        save_students(students)
         print("Student Added Successfully!")
         
 
@@ -71,7 +43,6 @@ while choice!=7:
             if roll_no == student.roll_no:
                 found=True
                 students.remove(student)
-                save_students(students)
                 print("Student Deleted Successfully!")            
                 break
         if not found:
@@ -87,7 +58,6 @@ while choice!=7:
                 for i in range(n):
                     subject = input(f"Enter subject {i+1}: ")
                     student.subjects.append(subject)
-                save_students(students)
                 print("Subjects added successfully!")
                 break
         if not found:
@@ -102,7 +72,6 @@ while choice!=7:
                 subject = input("Enter Subject Name: ")
                 grade = input("Enter Grade: ")
                 student.grades[subject] = grade
-                save_students(students)
                 print("Grade added successfully!")
                 break
 

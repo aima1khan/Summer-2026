@@ -14,13 +14,3 @@ class Student:
         print(f"Field of Study: {self.field_of_study}")
         for subject,grade in self.grades.items():
             print(subject,grade)
-
-    def to_dict(self):
-        return {
-            "name": self.name,
-            "age": self.age,
-            "roll_no": self.roll_no,
-            "field_of_study": self.field_of_study,
-            "subjects": self.subjects,
-            "grades": self.grades
-        }
