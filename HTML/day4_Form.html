@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback Form</title>
+    </head>
+    <body>
+        <h1>Course Feedback</h1>
+        <form action="/feedback" method="POST">
+            <label for="comments">Comments:</label>
+            <!--id connects to for in label, name is used to how server what the text area is called-->
+            <textarea id="comments" name="comments" rows="4"></textarea>
+            <br>
+            <input type="checkbox" id="recommend" name="recommend">
+            <label for="recommend">I would recommend this course</label>
+            <br>
+            <p>Difficulty:</p>
+            <input type="radio" id="easy" name="difficulty" value="easy">
+            <label for="easy">Easy</label>
+            <input type="radio" id="hard" name="difficulty" value="hard">
+            <label for="hard">Hard</label>
+            <br>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </body>
+</html>
