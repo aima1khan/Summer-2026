@@ -1,0 +1,14 @@
+a{
+    color:blue;
+    text-decoration:none;
+}
+a:hover{
+    color:red;
+    text-decoration:underline;
+}
+button:active{
+    opacity: 0.7;
+}
+li:first-child{
+    font-weight:bold;
+}
