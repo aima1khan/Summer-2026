@@ -1,0 +1,14 @@
+.container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.item{
+    padding: 15px;
+    background-color:lightgreen;
+    border: 1px solid green;
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+}
