@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+.card-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+.card{
+    width:220px;
+    padding:16px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    box-shadow:0 2px 4px rgba(0,0,0,0.1);
+    background-color:white;
+}
+.card h3{
+    color:#2c3e50;
+    margin-bottom:8px;
+}
+.card p{
+    color:#666;
+    font-size:14px;
+}
